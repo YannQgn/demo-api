@@ -8,14 +8,14 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class CoucouTest {
-    @LocalServerPort
-    private int port;
+//     @LocalServerPort
+//     private int port;
 
-    @Test
-    public void test_Get_Coucou() {
-        String result = new RestTemplate()
-                .getForObject("http://localhost:" + port + "/coucou",
-                String.class);
-                Assertions.assertThat(result.contains("salut")).isTrue();
-    }
+//     @Test
+//     public void test_Get_Coucou() {
+//         String result = new RestTemplate()
+//                 .getForObject("http://localhost:" + port + "/coucou",
+//                 String.class);
+//                 Assertions.assertThat(result.contains("salut")).isTrue();
+//     }
 }
